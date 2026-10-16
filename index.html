@@ -15,6 +15,7 @@
     </a>
     <nav aria-label="Основная навигация">
       <a data-i18n="navAbout" href="#about">О компании</a>
+      <a data-i18n="navBusiness" href="#business">Направления</a>
       <a data-i18n="navContact" href="#contact">Контакты</a>
     </nav>
     <div class="languages" role="group" aria-label="Язык сайта">
@@ -59,10 +60,30 @@
       </div>
     </section>
 
-    <section id="contact" class="contact shell">
+    <section id="business" class="business">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><p class="section-no light">02 / CORE FOCUS</p><h2 data-i18n="businessTitle">Основные направления</h2></div>
+          <p data-i18n="businessIntro">От первого запроса до делового диалога — помогаем партнёрам быстро понять возможности сотрудничества.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal"><span>01</span><b>↗</b><h3 data-i18n="service1Title">Трансграничная электронная коммерция</h3><p data-i18n="service1Text">Международные возможности электронной торговли и связь между рынками.</p></article>
+          <article class="service reveal"><span>02</span><b>◎</b><h3 data-i18n="service2Title">Связь с рынками</h3><p data-i18n="service2Text">Принимаем и уточняем деловые запросы для понятного старта сотрудничества.</p></article>
+          <article class="service reveal"><span>03</span><b>文</b><h3 data-i18n="service3Title">Многоязычная коммуникация</h3><p data-i18n="service3Text">Русский, китайский и английский языки для удобного общения.</p></article>
+          <article class="service reveal"><span>04</span><b>◇</b><h3 data-i18n="service4Title">Координация сотрудничества</h3><p data-i18n="service4Text">Направляем запрос ответственному лицу и предлагаем удобный канал связи.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process shell reveal">
+      <p class="section-no">03 / HOW IT STARTS</p><h2 data-i18n="processTitle">Простой путь к диалогу</h2>
+      <div class="steps"><div><b>01</b><span data-i18n="step1">Расскажите о задаче</span></div><i></i><div><b>02</b><span data-i18n="step2">Уточним потребности</span></div><i></i><div><b>03</b><span data-i18n="step3">Обсудим сотрудничество</span></div></div>
+    </section>
+
+    <section id="contact" class="contact shell reveal">
       <div class="contact-card">
         <div>
-          <p class="section-no light">02 / CONTACT</p>
+          <p class="section-no light">04 / CONTACT</p>
           <h2 data-i18n="contactTitle">Давайте обсудим сотрудничество</h2>
           <p data-i18n="contactText">Свяжитесь с Денисом удобным для вас способом.</p>
         </div>
@@ -79,6 +100,14 @@
   </main>
 
   <footer class="shell"><span>© 2026 JYSeaLand</span><span data-i18n="footer">Suzhou · Cross-border E-commerce</span></footer>
+  <button class="chat-launch" type="button" aria-expanded="false"><b>AI</b><span data-i18n="chatButton">Умный помощник</span></button>
+  <section class="chat-panel" aria-hidden="true">
+    <header><div><b>AI</b><div><strong data-i18n="chatTitle">Помощник JYSeaLand</strong><small data-i18n="chatOnline">● На связи</small></div></div><button class="chat-close" type="button">×</button></header>
+    <div class="chat-body"><div class="message bot" data-i18n="chatWelcome">Здравствуйте! Я расскажу о компании, направлениях и способах связи.</div></div>
+    <div class="quick-questions"><button data-question="business" data-i18n="quickBusiness">Чем вы занимаетесь?</button><button data-question="cooperate" data-i18n="quickCooperate">Как начать сотрудничество?</button><button data-question="contact" data-i18n="quickContact">Как связаться?</button></div>
+    <form class="chat-input"><input autocomplete="off" data-i18n-placeholder="chatPlaceholder" placeholder="Введите ваш вопрос…" /><button type="submit">↑</button></form>
+    <p class="chat-note" data-i18n="chatNote">Ответы формируются локально; текст никуда не отправляется.</p>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
